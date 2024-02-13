@@ -1,6 +1,11 @@
 package com.example.compositiongame.domain.domain.entity
 
-enum class Level {
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+import java.io.Serializable
+
+@Parcelize
+enum class Level: Parcelable {
 
     TEST, EASY, NORMAL, HARD
 }
